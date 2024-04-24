@@ -53,6 +53,16 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\mydatabase.mdb")>  _
+        Public ReadOnly Property mydatabaseTest() As String
+            Get
+                Return CType(Me("mydatabaseTest"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 
