@@ -69,7 +69,7 @@ not available (like send mail etc..)")
             TextBox3.Text = ""
             TextBox4.Text = ""
         ElseIf (TextBox3.Text.Length <= 8) Then
-            MsgBox("Password must be greater than 8 character", MsgBoxStyle.Exclamation, Title:="Error")
+            MsgBox("A senha deve ter mais de 8 caracteres", MsgBoxStyle.Exclamation, Title:="Error")
             TextBox3.Text = ""
             TextBox4.Text = ""
         ElseIf Not (ComboBox1.Text = "1" OrElse ComboBox1.Text = "2") Then

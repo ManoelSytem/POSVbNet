@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.vbproject.loginform
+            Me.MainForm = Global.vbproject.showUsers
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
